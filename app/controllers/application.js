@@ -3,18 +3,18 @@ import { helper } from '@ember/component/helper';
 import { tracked } from '@glimmer/tracking';
 import { hbs } from 'ember-template-imports';
 
-export const Item = hbs`<b>{{@item.name}}</b> {{@item.age}}`;
+const Item = hbs`<b>{{@item.name}}</b> {{@item.age}}`;
 
 class Shared {
   constructor(data) {
     this.data = data;
+    this.Item = Item;
   }
 
-  Item = Item;
   @tracked data;
 
   filter = helper(([key, value]) => {
-    return this.data.filter((data) => data[key] === value);
+    return this.data.filter((data) => (!value ? true : data[key] === value));
   });
 }
 
