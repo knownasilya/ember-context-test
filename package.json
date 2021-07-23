@@ -23,6 +23,7 @@
     "test:ember": "ember test"
   },
   "devDependencies": {
+    "@alexlafroscia/ember-context": "knownasilya/ember-context",
     "@ember/optional-features": "^2.0.0",
     "@ember/test-helpers": "^2.2.5",
     "@glimmer/component": "^1.0.4",
@@ -46,6 +47,7 @@
     "ember-page-title": "^6.2.2",
     "ember-qunit": "^5.1.4",
     "ember-resolver": "^8.0.2",
+    "ember-simple-set-helper": "^0.1.2",
     "ember-source": "~3.27.2",
     "ember-template-lint": "^3.4.2",
     "ember-welcome-page": "^4.0.0",

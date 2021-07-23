@@ -1,7 +1,22 @@
-{{page-title "EmberContextTest"}}
+{{page-title 'EmberContextTest'}}
 
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+<ContextProvider @key='shared' @value={{this.shared}}>
+  <ul>
+    <li>
+      <button type='button' {{on 'click' (set this.name 'hello')}}>
+        hello
+      </button>
+    </li>
+    <li>
+      <button type='button' {{on 'click' (set this.name 'bob')}}>
+        bob
+      </button>
+    </li>
+    <li>
+      <button type='button' {{on 'click' (set this.name 'tilly')}}>
+        tilly
+      </button>
+    </li>
+  </ul>
+  <Hello @name={{this.name}} />
+</ContextProvider>

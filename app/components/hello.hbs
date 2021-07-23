@@ -1,0 +1,9 @@
+{{#let (consume-context 'shared') as |shared|}}
+  <ul>
+    {{#each (shared.filter 'name' @name) as |item|}}
+      <li>
+        {{item.name}}
+      </li>
+    {{/each}}
+  </ul>
+{{/let}}
