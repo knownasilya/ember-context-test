@@ -3,7 +3,7 @@ import { helper } from '@ember/component/helper';
 import { tracked } from '@glimmer/tracking';
 import { hbs } from 'ember-template-imports';
 
-export const Item = hbs`<b>{{@item.name}}</b>`;
+export const Item = hbs`<b>{{@item.name}}</b> {{@item.age}}`;
 
 class Shared {
   constructor(data) {
