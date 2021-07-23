@@ -10,18 +10,15 @@ class Shared {
     this.data = data;
   }
 
-  @tracked data;
   Item = Item;
+  @tracked data;
 
   filter = helper(([key, value]) => {
     return this.data.filter((data) => data[key] === value);
   });
-
 }
 
 export default class ApplicationController extends Controller {
- 
-  
   get shared() {
     return new Shared(this.model);
   }
