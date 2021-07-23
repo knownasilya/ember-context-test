@@ -49,6 +49,7 @@
     "ember-resolver": "^8.0.2",
     "ember-simple-set-helper": "^0.1.2",
     "ember-source": "~3.27.2",
+    "ember-template-imports": "^1.1.1",
     "ember-template-lint": "^3.4.2",
     "ember-welcome-page": "^4.0.0",
     "eslint": "^7.27.0",

@@ -2,7 +2,7 @@
   <ul>
     {{#each (shared.filter 'name' @name) as |item|}}
       <li>
-        {{item.name}}
+        <shared.Item @item={{item}} />
       </li>
     {{/each}}
   </ul>
