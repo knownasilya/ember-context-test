@@ -2,9 +2,10 @@
 # yarn lockfile v1
 
 
-"@alexlafroscia/ember-context@knownasilya/ember-context":
-  version "1.0.0"
-  resolved "https://codeload.github.com/knownasilya/ember-context/tar.gz/5228925f20d738de0057bcd2337eb76463248b68"
+"@alexlafroscia/ember-context@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@alexlafroscia/ember-context/-/ember-context-1.0.1.tgz#51c7665a07775ad46a0f00196f907ec7aea09704"
+  integrity sha512-/yzk7Lj8JM+AT+1Abozxlcw7rt/J8Bz/fn5BJw0k3dIWSqT4ivvUTFCed1LoCXUIYhNtRPKDcUmlfyxjP/yXFA==
   dependencies:
     "@glimmer/tracking" "^1.0.1"
     ember-cli-babel "^7.22.1"
