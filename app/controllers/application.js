@@ -1,6 +1,6 @@
 import Controller from '@ember/controller';
 import { helper } from '@ember/component/helper';
-import { tracked } from '@glimmer/tracking';
+import { tracked, cached } from '@glimmer/tracking';
 import { hbs } from 'ember-template-imports';
 
 const Item = hbs`<b>{{@item.name}}</b> {{@item.age}}`;
@@ -19,6 +19,7 @@ class Shared {
 }
 
 export default class ApplicationController extends Controller {
+  @cached
   get shared() {
     return new Shared(this.model);
   }
